@@ -20,9 +20,7 @@ public class PlayerIdleState : PlayerState
     {
         base.Update();
 
-        if (Input.GetKeyDown(KeyCode.M))
-        {
+        if (xInput != 0)
             stateMachine.ChangeState(player.moveState);
-        }
     }
 }
